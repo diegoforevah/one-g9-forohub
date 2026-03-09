@@ -71,6 +71,7 @@ Ejemplo de usuarios:
 <img width="1274" height="323" alt="image" src="https://github.com/user-attachments/assets/f02afc47-a956-4d84-b874-a663a3ef0c2a" />
 * Los usuarios con rol de ADMIN podrán ver tópicos que estén deshabilitados, editar tópicos de otros usuarios y eliminar tópicos de otros usuarios. Mientras que los usuarios con rol de USER solo podrán ver, editar y eliminar sus propios tópicos.
 
+
 Para acceder a la aplicación debes seguir estos pasos:
 
 - Descarga el comprimido del proyecto y alójalo donde gustes.
