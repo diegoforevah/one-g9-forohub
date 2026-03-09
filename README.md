@@ -63,7 +63,13 @@ Consulta sin token (403 Forbidden):
 
 Pre-requisitos:
 - IntelliJ IDEA
-- PostgreSQL (Instalación, nombre de usuario y contraseña y creación de una base de datos)
+- PostgreSQL (Instalación, nombre de usuario y contraseña, creación de una base de datos y creación de usuarios de prueba)
+
+Ejemplo de usuarios:
+* Se debe guardar la clave del usuario encriptada directamente en la base de datos
+* Los usuarios puede tener dos roles ROLE_ADMIN o ROLE_USER
+<img width="1274" height="323" alt="image" src="https://github.com/user-attachments/assets/f02afc47-a956-4d84-b874-a663a3ef0c2a" />
+* Los usuarios con rol de ADMIN podrán ver tópicos que estén deshabilitados, editar tópicos de otros usuarios y eliminar tópicos de otros usuarios. Mientras que los usuarios con rol de USER solo podrán ver, editar y eliminar sus propios tópicos.
 
 Para acceder a la aplicación debes seguir estos pasos:
 
