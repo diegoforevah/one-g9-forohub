@@ -37,9 +37,12 @@ Algunos ejemplos:
 <img width="941" height="451" alt="image" src="https://github.com/user-attachments/assets/24eae2a3-8cab-4a1c-aa55-e733e4bd0924" />
 
 - Get al endpoint /topicos para listar todos los topicos donde deberemos adjuntar nuestro token para poder hacer las demás consultas, de no hacerlo no podremos realizar ninguna acción.
+
 <img width="936" height="339" alt="image" src="https://github.com/user-attachments/assets/bffb5004-5c3d-4fc3-8e69-bdceab8b9c73" />
 <img width="933" height="613" alt="image" src="https://github.com/user-attachments/assets/d44d784b-70f5-4396-96aa-5a05319fc398" />
+
 Consulta sin token (403 Forbidden):
+
 <img width="664" height="335" alt="image" src="https://github.com/user-attachments/assets/044feaf3-ae21-4fae-a9cf-07afca7843df" />
 
 - Get al endpoint /topicos buscando por Curso y año
