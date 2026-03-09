@@ -1,7 +1,7 @@
 # Foro Hub
 
 <p align="center">  
-  <img width="500" height="500" alt="Badge-Spring" src="https://github.com/user-attachments/assets/cb44ae30-ad61-4592-9306-f5ce16099b7f"/>
+  <img width="250" height="250" alt="Badge-Spring" src="https://github.com/user-attachments/assets/cb44ae30-ad61-4592-9306-f5ce16099b7f"/>
 </p>
 <p align="center">
   <img src="https://img.shields.io/badge/Estado-Finalizado-purple">
