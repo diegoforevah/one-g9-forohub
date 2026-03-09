@@ -1,5 +1,6 @@
 package com.alura.foro_hub.domain.topico;
 
+import com.alura.foro_hub.domain.usuario.Usuario;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -22,13 +23,15 @@ public class Topico {
     private String mensaje;
     private LocalDateTime fechaCreacion = LocalDateTime.now();
     private Boolean status = true;
-    private String autor;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "usuario_id")
+    private Usuario autor;
     private String curso;
 
-    public Topico(TopicoDto datos) {
+    public Topico(TopicoDto datos, Usuario autor) {
         this.titulo = datos.titulo();
         this.mensaje = datos.mensaje();
-        this.autor = datos.autor();
+        this.autor = autor;
         this.curso = datos.curso();
     }
 
@@ -39,5 +42,9 @@ public class Topico {
         if (datos.mensaje() != null) {
             this.mensaje = datos.mensaje();
         }
+    }
+
+    public void desactivar() {
+        this.status = false;
     }
 }

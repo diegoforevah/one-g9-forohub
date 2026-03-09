@@ -1,7 +1,7 @@
 package com.alura.foro_hub.infra.errors;
 
-public class ExValidacion extends RuntimeException {
-    public ExValidacion(String mensaje) {
+public class ValidacionEx extends RuntimeException {
+    public ValidacionEx(String mensaje) {
         super(mensaje);
     }
 }

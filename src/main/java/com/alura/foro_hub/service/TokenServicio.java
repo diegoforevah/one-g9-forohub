@@ -1,6 +1,7 @@
 package com.alura.foro_hub.service;
 
 import com.alura.foro_hub.domain.usuario.Usuario;
+import com.alura.foro_hub.infra.errors.TokenEx;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTCreationException;
@@ -49,7 +50,7 @@ public class TokenServicio {
                     .verify(token)
                     .getSubject();
         } catch (JWTVerificationException exception) {
-            throw new RuntimeException("Token JWT inválido o expirado");
+            throw new TokenEx("Token JWT inválido o expirado");
         }
     }
 }

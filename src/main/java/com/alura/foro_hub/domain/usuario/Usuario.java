@@ -31,7 +31,7 @@ public class Usuario implements UserDetails {
     @Override
     @NonNull
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return List.of(new SimpleGrantedAuthority("ROLE_USER"));
+        return List.of(new SimpleGrantedAuthority(this.perfiles));
     }
 
     @Override
@@ -40,6 +40,4 @@ public class Usuario implements UserDetails {
     @Override
     @NonNull
     public String getUsername() { return nombre; }
-
-    // ... implementar los demás métodos retornando true (isAccountNonExpired, etc)
 }
